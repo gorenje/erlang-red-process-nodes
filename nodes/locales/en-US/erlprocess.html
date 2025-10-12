@@ -3,12 +3,12 @@ Represent an existing Erlang process by name, number or rank.
 
 ### Inputs
 
-: payload (any) : what is expected as payload input.
-: topic (string) : (optional) is a topic expected or handled.
+: payload (any) : The messager payload to send the process.
+: *msgtype* (string) : (optional) either `info`, `cast` or `call`. Defaults to `info`.
 
 ### Outputs
 
-: payload (any) : what is returned as payload.
+: *payload* (any) : (optional) in the case of `cast` or `call` messages, the reply value.
 
 ### Description
 

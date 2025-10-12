@@ -1,0 +1,22 @@
+<script type="text/javascript">
+(function ($) {
+   RED.nodes.registerType('erlconfigCfg', {
+      category: 'config',
+      hasUsers: false,
+      defaults: {
+         name: { value: "" },
+         data: { value: "" }
+      },
+      paletteLabel: 'config',
+      label: function () {
+         return this.name;
+      }
+  });
+})(jQuery);
+</script>
+
+<!-- The html for the config node info panel (in right sidebar) -->
+<script type="text/x-red" data-template-name="erlconfigCfg">
+   <p>Configiration</p>
+   Configuration
+</script>

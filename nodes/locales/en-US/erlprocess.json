@@ -3,7 +3,9 @@
 
 
     "label": {
-      "statusset": "Status Set"
+      "statusset": "Status Set",
+      "process": "Process Id",
+      "capture_io": "Capture I/O?"
     },
 
     "status": {

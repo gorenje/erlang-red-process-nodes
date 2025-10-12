@@ -1,6 +1,6 @@
 {
   "name" : "@gregoriusrippenstein/erlang-red-process-nodes",
-  "version": "0.4.1",
+  "version": "0.0.1",
   "dependencies": {
   },
 
@@ -19,8 +19,12 @@
   "node-red" : {
     "version": ">=3.0.0",
 
+    "plugins": {
+      "sidebar-plugin": "plugins/erlconfig.html"
+    },
 
     "nodes": {
+       "erlconfig": "nodes/erlconfig.js",
        "erlprocess": "nodes/erlprocess.js"
     }
   },
