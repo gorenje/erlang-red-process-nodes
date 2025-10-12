@@ -326,11 +326,15 @@
             return d
          })
 
-         dagreLR({
-            "allnodes": allnodes,
-            "alledges": alledges,
-            "fixedNodeId": pid2node[process.pid].id
-         }, (data) => { RED.view.importNodes(data.nodes) });         
+         if ( typeof dagre == "object") {
+            dagreLR({
+               "allnodes": allnodes,
+               "alledges": alledges,
+               "fixedNodeId": pid2node[process.pid].id
+            }, (data) => { RED.view.importNodes(data.nodes) });
+         } else {
+            RED.view.importNodes(allnodes)
+         }
       })
 
       $('#node-input-erlprocess-select-none-but').on('click', (e) => {
