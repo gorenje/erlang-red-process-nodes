@@ -1,6 +1,10 @@
 {
   "erlcaptureio": {
 
+    "captureFlow": "captureio: flow",
+    "captureGroup": "captureio: group",
+    "nodeCount": "captureio: __number__",
+
     "label": {
       "statusset": "Status Set",
       "source": "Captured Nodes",
