@@ -32,11 +32,11 @@
         return this.name;
       }
       if (this.scope === "group") {
-        return this._("erlcaptureio.captureioGroup");
+        return this._("erlcaptureio.captureGroup");
       } else if (Array.isArray(this.scope)) {
         return this._("erlcaptureio.nodeCount", { number: this.scope.length });
       }
-      return this._("erlcaptureio.captureioFlow")
+      return this._("erlcaptureio.captureFlow")
     },
 
     labelStyle: function () {
