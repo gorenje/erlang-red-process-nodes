@@ -1,0 +1,24 @@
+{
+  "erlcaptureio": {
+
+    "label": {
+      "statusset": "Status Set",
+      "source": "Captured Nodes",
+      "selectAll": "select all",
+      "intensity": "Intensity (count)",
+      "period": "Period (seconds)"
+      
+    },
+
+    "status": {
+      "waiting": "Waiting for Godot",
+      "timeout": "No more time to waiting"
+    },
+
+    "scope": {
+      "all": "All flow nodes",
+      "group": "In same group",
+      "selected": "Selected nodes"
+    }
+  }
+}

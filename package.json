@@ -25,7 +25,8 @@
 
     "nodes": {
        "erlconfig": "nodes/erlconfig.js",
-       "erlprocess": "nodes/erlprocess.js"
+       "erlprocess": "nodes/erlprocess.js",
+       "erlcaptureio": "nodes/erlcaptureio.js"
     }
   },
 
