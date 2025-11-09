@@ -5,6 +5,7 @@
     "label": {
       "statusset": "Status Set",
       "process": "Process Id",
+      "process_name": "Process Name",
       "capture_io": "Capture I/O?"
     },
 

@@ -124,8 +124,9 @@
                      let nde = {
                         "id": RED.nodes.id(),
                         "type": "erlprocess",
-                        "pid": item.label, // this is either the registered name or the pid - name is better since it will survive restarts
-                        "name": item.label,
+                        "pid": item.pid, 
+                        "pidname": item.label,
+                        "name": "",
                         "capture_io": false,
                         "l": !$('#erlprocess-import-compact-node-size').is(":checked")
                      }
@@ -275,8 +276,9 @@
          let nde = {
             "id": RED.nodes.id(),
             "type": "erlprocess",
-            "pid": item.label, // this is either the registered name or the pid - name is better since it will survive restarts
-            "name": item.label,
+            "pid": item.pid,
+            "pidname": item.label,
+            "name": "",
             "capture_io": false,
             "l": !$('#erlprocess-import-compact-node-size').is(":checked")
          }
@@ -311,8 +313,9 @@
             pid2node[p.pid] = {
                "id": RED.nodes.id(),
                "type": "erlprocess",
-               "pid": p.label,
-               "name": p.label,
+               "pid": p.pid,
+               "pidname": p.label,
+               "name": "",
                "capture_io": false,
                "l": !$('#erlprocess-import-compact-node-size').is(":checked"),
                "wires": [[]]

@@ -1,14 +1,5 @@
 <script type="text/javascript">
   (function(){
-  
-
-  function frontendSupportFunction() {
-  }
-
-  var functTwo = (arg) => {
-
-  };
-  
   RED.nodes.registerType('erlprocess',{
     color: '#FFCC66',
     icon: "font-awesome/fa-genderless",
@@ -20,7 +11,11 @@
       },
       pid: {
         value: "",
-        required: true
+        required: false
+      },
+      pidname: {
+        value: "",
+        required: false
       }
     },
 
@@ -29,7 +24,7 @@
     outputs: 1,
 
     label: function() {
-      return (this.name || this._def.paletteLabel);
+      return (this.name || this.pidname || this.pid || this._def.paletteLabel);
     },
 
     labelStyle: function() {
@@ -75,5 +70,10 @@
   <div class="form-row">
     <label for="node-input-pid"><i class="fa fa-circle"></i> <span data-i18n="erlprocess.label.process"></span></label>
     <input type="text" id="node-input-pid" data-i18n="[placeholder]erlprocess.label.process">
+  </div>
+
+  <div class="form-row">
+    <label for="node-input-pidname"><i class="fa fa-square"></i> <span data-i18n="erlprocess.label.process_name"></span></label>
+    <input type="text" id="node-input-pidname" data-i18n="[placeholder]erlprocess.label.process_name">
   </div>
 </script>
